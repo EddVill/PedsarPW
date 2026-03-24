@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>PEDSAR | Centro de Capacitaciones</title>
+  <meta name="description" content="Capacitación profesional en tecnología, negocios y habilidades blandas. Cursos presenciales y online con instructores expertos.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="logo">
+        <h1>PEDSAR<span> Capacitaciones</span></h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h2>Transforma tu futuro con <span>educación de alto impacto</span></h2>
+        <p>Con más de 5 años formando profesionales en tecnología e innovación. Cursos hibridos y virtuales con certificaciones.</p>
+        <a href="#" class="btn-primary">Ver cursos</a>
+      </div>
+    </section>
+
+    <!-- Carrusel de imágenes (Slider) -->
+    <section class="section-card">
+      <div class="container">
+        <div class="section-title">
+          <span>📸</span> Conoce nuestros cursos:
+        </div>
+        <div class="carousel-wrapper">
+          <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="carousel-slide">
+                <img src="https://picsum.photos/id/20/1200/600" alt="Aula de tecnología" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="https://picsum.photos/id/26/1200/600" alt="Biblioteca especializada" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="https://picsum.photos/id/42/1200/600" alt="Taller práctico" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="https://picsum.photos/id/60/1200/600" alt="Ceremonia de graduación" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn btn-prev" id="prevBtn" aria-label="Anterior">‹</button>
+          <button class="carousel-btn btn-next" id="nextBtn" aria-label="Siguiente">›</button>
+        </div>
+        <div class="carousel-dots" id="dotsContainer"></div>
+        <p class="carousel-caption">Aprende con nosotros de manera única</p>
+      </div>
+    </section>
+
+    <!-- Cursos destacados -->
+    <section class="courses">
+      <div class="container">
+        <div class="section-title">
+          <span></span>Nuestros Cursos Destacados
+        </div>
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-icon">💻</div>
+            <h3>Base de Datos SQL Server</h3>
+            <p>Aprende Base de datos "SQL" para proyectos reales.</p>
+            <a href="#" class="btn-outline">Más info</a>
+          </div>
+          <div class="course-card">
+            <div class="course-icon">📊</div>
+            <h3>Data Science & IA</h3>
+            <p>Python, Machine Learning, análisis de datos y visualización.</p>
+            <a href="#" class="btn-outline">Más info</a>
+          </div>
+          <div class="course-card">
+            <div class="course-icon">🎯</div>
+            <h3>Marketing Digital</h3>
+            <p>SEO, Google Ads, redes sociales y estrategia de contenidos.</p>
+            <a href="#" class="btn-outline">Más info</a>
+          </div>
+          <div class="course-card">
+            <div class="course-icon">🗣️</div>
+            <h3>Habilidades Directivas</h3>
+            <p>Liderazgo, comunicación efectiva y gestión de equipos.</p>
+            <a href="#" class="btn-outline">Más info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección interactiva: Sliders de accesibilidad -->
+    <section class="section-card interactive-demo">
+      <div class="container">
+        <div class="section-title">
+          <span></span>Personaliza tu experiencia visual
+        </div>
+        <div class="demo-intro">
+          <p>En PEDSAR creemos en la inclusión. Ajusta el tamaño del texto y el contraste de fondo para una lectura más cómoda.</p>
+        </div>
+        <div class="demo-controls">
+          <div class="slider-card">
+            <h3>Tamaño de texto</h3>
+            <div class="slider-label">
+              <span>Pequeño</span>
+              <span class="value-display" id="fontSizeValue">18px</span>
+              <span>Grande</span>
+            </div>
+            <input type="range" id="fontSlider" min="12" max="36" value="18" step="1">
+            <p class="slider-help">Aumenta la fuente para mejor legibilidad</p>
+          </div>
+          <div class="slider-card">
+            <h3>Contraste de fondo</h3>
+            <div class="slider-label">
+              <span>Claro</span>
+              <span class="value-display" id="brightnessValue">52%</span>
+              <span>Oscuro</span>
+            </div>
+            <input type="range" id="bgSlider" min="20" max="85" value="52" step="1">
+            <p class="slider-help">Ajusta la intensidad del fondo</p>
+          </div>
+        </div>
+        <div class="demo-box" id="demoBox">
+          <p>✨ Mensaje de prueba ✨</p>
+          <span>“La educación es el arma más poderosa para cambiar el mundo” — Nelson Mandela</span>
+          <div class="demo-note">¡Mueve los controles y observa los cambios!</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <span>🗣️</span> Lo que dicen nuestros alumnos
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial">
+            <p>"Gracias a PEDSAR conseguí mi primer empleo como desarrolladora. Los instructores son increíbles."</p>
+            <cite>— Jose Q., Desarrollador de Base de Datos</cite>
+          </div>
+          <div class="testimonial">
+            <p>"La metodología práctica y el acompañamiento personalizado marcan la diferencia. 100% recomendado."</p>
+            <cite>— Carlos M., Data Analyst</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div class="footer-info">
+        <h3>PEDSAR Capacitaciones</h3>
+        <p>Av. Principal 0000, Ayacucho<br>+51 987654321<br>contacto@pedsar.pe</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">Certificaciones</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Trabaja con nosotros</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Suscríbete</h4>
+        <p>Recibe información de nuevos cursos</p>
+        <form id="newsletterForm">
+          <input type="email" placeholder="tu@email.com" required>
+          <button type="submit">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 PEDSAR Capacitaciones. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
